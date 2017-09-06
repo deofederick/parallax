@@ -1,0 +1,173 @@
+h1
+	color: #ccc
+
+.content
+	article
+		padding: 50px 0
+		max-width: 640px
+		margin: 0 auto
+		text-align: center
+
+//parallax
+
+.dream-box
+	position: relative
+	height: 600px
+	background:
+		image: url('../img/dream-box.png')
+		size: contain
+		position: top center
+		attachment: fixed
+	overflow: hidden
+
+.logo-box
+	height: 290px
+	width: 100%
+	background:
+		size: contain
+		image: url('../img/logo-box.png')
+		position: center
+		repeat: no-repeat
+	position: absolute
+	top: 50%
+	margin-top: -180px
+	margin-left: 20px
+
+.elements
+	width: 710px
+	height: 570px
+	background:
+		size: contain
+		//color: transparentize(pink, 0.4)
+		image: url('../img/element.png')
+		repeat: no-repeat
+		position: bottom center
+	position: absolute
+	left: 50%
+	margin-left: -320px
+
+.girl-box
+	width: 710px
+	height: 430px
+	background:
+		size: contain
+		//color: transparentize(pink, 0.4)
+		image: url('../img/girl-box.png')
+		repeat: no-repeat
+		position: bottom center
+	position: absolute
+	top: 50%
+	margin-left: 280px
+
+//shirts grid
+.clothes-pics
+	margin-bottom: 20px
+	.tmp
+		margin-bottom: 20px
+		position: relative
+		opacity: 0
+		transform: translateX(20px)
+		transition: all 0.3s ease-in-out
+		overflow: hidden
+		cursor: pointer
+
+
+		&.is-showing
+			opacity: 1
+			transform: translateX(0px)
+
+		img
+			display: block
+			transform: scale(1)
+			transition: all 0.4s ease-in-out
+
+		&:hover
+			figcaption
+				left: 0%
+			img
+				transform: scale(1.3)
+
+
+	figcaption
+		position: absolute
+		bottom: 10px
+		left: -100%
+		background: black
+		color: white
+		padding: 2px 8px
+		font-size: 11px
+		transition: all 0.3s ease-in-out
+
+
+
+//large window
+.large-window
+	height: 420px
+	width: 450px
+	background:
+		//color: transparentize(pink, 0.4)
+		image: url('../img/standing.jpg')
+		position: center 0px
+		repeat: repeat-y
+		attachment: fixed
+	margin-top: 70px
+	margin-left: 457px
+	border-radius: 50%
+	position: relative
+
+	.window-tint
+		background-color: rgba(0,0,0,0.5)
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.promo-text
+		color: white
+		font-weight: 100
+		font-size: 40px
+		text-align: center
+
+		strong
+			display: block
+			font:
+				size: 20px
+				weight: 300
+
+		.window-cta
+			font-size: 20px
+			text-decoration: none
+			color: white
+			border: 1px solid white
+			padding: 10px 20px
+			transition: all 0.3s ease-in-out
+
+			&:hover
+				background: white
+				color: black
+
+//post
+.blogD
+	text-align: center
+	margin-top: 100px
+
+	.post
+		border: 1px solid #e1e1e1
+		padding: 20px
+		background: white
+		position: relative
+
+	.post-1
+		transform: translate(150px, 20px)
+
+	.post-2
+		z-index: 2
+
+	.post-3
+		transform: translate(-150px, 20px)
+
